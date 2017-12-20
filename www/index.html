@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, height=device-height" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/ios7-phonegap-fix.css" />
+        
+        <link rel="stylesheet" type="text/css" href="css/legatus.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <script src="js/jquery-1.11.1.js"></script>
+        
+       
+        <title>mRecords Mobile</title>
+    </head>
+    <body>
+        <div class="app-home">
+            <div class="bottom-bar-home">
+                <div class="home_buttons">
+                    <div  class="home_change_vehicle">
+                        <!--GRIZ for testing you can comment out the doLogin Button and uncomment the the line below -->
+                        <!--<button id="loginBtn" onclick="bypassLoginForTesting(this, event)" class="btn btn-large btn-danger btn-fill btn_home">-->
+                        <a id="loginBtn" onclick="doLogin(this, event)" class="btn btn-large btn-danger btn-fill btn_home">
+                            <span id="loginBtnSpinner" style="display: none"><i class="fa fa-spinner fa-spin "></i></span>
+                            <!--<span id="loginBtnText" ><i style="font-size:1.2em" class="fa fa-lock"></i> LOGIN</span>-->
+                            <span id="loginBtnText" >LOGIN</span>
+                        </a>
+                    </div>
+                </div>     
+            </div>
+
+            <div class="content">
+                <div class="login_header">
+                    <img height="56" width="190" src="img/mrecords_logo.svg" onerror="this.onerror=null; this.src='img/mrecords_logo.png'">
+                </div>
+                <div class="home_details">
+                    <form id="mainLogin" name="mainLogin">
+                        <div class="login_form">
+                            <div class="login">
+                                <div >
+                                    <input class="form-control" type="text" placeholder="Enter your email" id="userName" required name="j_username">
+                                </div>
+                                <div>
+                                    <input class="form-control" type="password" placeholder="Password" id="password" required name="j_password">
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div id="ajaxSpinner"> <i style="font-size: 2.5em" class="fa fa-spinner fa-spin"></i></div>
+            </div>
+        </div>
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/common.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <script>
+            $('#ajaxSpinner').hide();
+            app.initialize();
+        </script>
+
+    </body>
+</html>
+
+
+
+
+
+

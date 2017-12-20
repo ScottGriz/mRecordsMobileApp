@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/ios7-phonegap-fix.css" />
+        
+        <link rel="stylesheet" type="text/css" href="css/legatus.css" />
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAp0s0LjHJW4rL7BXnq7RRtF1KIlWkQnk&sensor=true"></script>
+
+        <title>Your current position</title>
+    </head>
+    <body>
+        <div class="app-home">
+            <div class="top-bar">
+                <div class="header_nav_left"><!-- <a href=""><i class="fa fa-play-circle fa-rotate-180"></i></a> --></div>
+                <div class="header_title"><img width="153"  src="img/title_directions.svg" onerror="this.onerror=null; this.src=''"></div>
+                <div class="header_nav_right"><!-- <i class="fa fa-play-circle "></i> --></div>
+              <!--   <div class="header_title">Messages</div> -->
+            </div>
+            <div class="bottom-bar">
+                <div class="nav-item">
+                    <div><a class="icon" href="home.html"><i class="icon fa fa-home fa-3x"></i></a></div>
+
+                   <!--  <div class="icon-desc"><a class="icon-desc" href="index.html">HOME</a></div> -->
+                </div>
+                <div class="nav-item">
+                    <div><a class="icon" href="messages.html"><i class="icon fa fa-envelope fa-3x"></i></a></div>
+                    <div class="noti" style="display: none">2</div>
+                    <!-- <div class="icon-desc"><a class="icon-desc" href="">MESSAGES</a></div> -->
+                </div>
+                <div class="nav-item">
+                    <div><a class="icon" href="drive.html"><i class="icon fa fa-tachometer fa-3x"></i></a></div>
+                    <!-- <div class="icon-desc"><a class="icon-desc" href="">DRIVING</a></div> -->
+                </div>
+                <div class="nav-item-active">
+                    
+                    <div><a class="icon" href="maps.html"><i class="icon fa fa-map-marker fa-3x"></i></a></div>
+                    <!-- <div class="icon-desc"><a class="icon-desc" href="">ROUTES</a></div> -->
+                </div>
+                <div class="nav-item">
+                    <div><a class="icon" href="settings.html"><i class="icon fa fa-cog fa-3x"></i></a></div>
+                    <!-- <div class="icon-desc"<a class="icon-desc" href="">SETTINGS</a></div> -->
+                </div>
+            </div>
+            <div class="content">
+                <div class="home_details">
+                    <div class="home_user_name">
+                        <div id="mapCanvas" class="map_area"></div>
+                        <div class="map_summary">
+                            <div class="map_distance"><span class="map_icon"><i class="fa fa-road"></i></span><span class="map_text"> 15.5 miles</span></div>
+                            <div class="map_time"><span class="map_icon"><i class="fa fa-clock-o"></i></span><span class="map_text"> 30 mins</span></div>
+                        </div>
+                        <div></div>
+                    </div>
+                    
+                    
+                </div>  
+               
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/common.js"></script>
+        <script type="text/javascript" src="js/maps.js"></script>
+        <script>
+            $('#ajaxSpinner').hide();
+            app.initialize();
+        </script>
+    </body>
+</html>

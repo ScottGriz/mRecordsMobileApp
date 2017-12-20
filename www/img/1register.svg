@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_extend "http://ns.adobe.com/Extensibility/1.0/">
+	<!ENTITY ns_ai "http://ns.adobe.com/AdobeIllustrator/10.0/">
+	<!ENTITY ns_graphs "http://ns.adobe.com/Graphs/1.0/">
+	<!ENTITY ns_vars "http://ns.adobe.com/Variables/1.0/">
+	<!ENTITY ns_imrep "http://ns.adobe.com/ImageReplacement/1.0/">
+	<!ENTITY ns_sfw "http://ns.adobe.com/SaveForWeb/1.0/">
+	<!ENTITY ns_custom "http://ns.adobe.com/GenericCustomNamespace/1.0/">
+	<!ENTITY ns_adobe_xpath "http://ns.adobe.com/XPath/1.0/">
+]>
+<svg version="1.1" id="Layer_1" xmlns:x="&ns_extend;" xmlns:i="&ns_ai;" xmlns:graph="&ns_graphs;"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="512px" height="512px"
+	 viewBox="0 0 512 512" enable-background="new 0 0 512 512" xml:space="preserve">
+<metadata>
+	<sfw  xmlns="&ns_sfw;">
+		<slices></slices>
+		<sliceSourceBounds  height="16383" width="361.812" bottomLeftOrigin="true" x="420.334" y="-7771"></sliceSourceBounds>
+	</sfw>
+</metadata>
+<rect x="80.834" y="376.413" fill="#FFFFFF" width="361.812" height="21.82"/>
+<polygon fill="#FAD423" points="438.167,450.5 84.455,450.5 80.834,398.233 442.647,398.233 "/>
+<rect x="124.539" y="203.055" fill="#FFFFFF" width="274.023" height="92.167"/>
+<rect x="143.505" y="251.073" fill="#DFE2E1" width="109.609" height="22.328"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="261.7405" y1="376.4131" x2="261.7405" y2="295.1582">
+	<stop  offset="0" style="stop-color:#DFE2E1"/>
+	<stop  offset="1" style="stop-color:#DFE2E1"/>
+</linearGradient>
+<polygon fill="url(#SVGID_1_)" points="442.647,376.413 80.834,376.413 124.539,295.158 398.943,295.158 "/>
+<rect x="156.191" y="168.612" fill="#FAD423" width="83.729" height="104.789"/>
+<rect x="156.191" y="262.49" fill="#E4B925" width="83.729" height="10.91"/>
+<rect x="319.082" y="172.926" fill="#FFFFFF" width="14.717" height="30.954"/>
+<rect x="319.082" y="172.926" fill="#C5C4C4" width="14.717" height="12.686"/>
+<rect x="271.383" y="96.807" fill="#FFFFFF" width="110.369" height="76.119"/>
+<rect x="285.591" y="115.329" fill="#3DBB93" width="81.953" height="38.82"/>
+<circle fill="#E9A721" cx="261.615" cy="424.747" r="13.32"/>
+<rect x="285.591" y="115.329" fill="#2D9F75" width="81.953" height="9.895"/>
+<g>
+	<polygon fill="#A7A5A6" points="105.318,365.373 130.469,365.373 137.93,347.057 114.208,347.059 	"/>
+	<polygon fill="#A7A5A6" points="145.688,365.373 170.836,365.373 176.007,347.059 152.285,347.059 	"/>
+	<polygon fill="#A7A5A6" points="186.056,365.373 211.205,365.373 214.082,347.059 190.361,347.059 	"/>
+	<polygon fill="#A7A5A6" points="227.417,365.373 252.565,365.373 253.094,347.059 229.374,347.059 	"/>
+	<polygon fill="#A7A5A6" points="268.777,365.373 293.921,365.373 292.103,347.059 268.385,347.059 	"/>
+	<polygon fill="#A7A5A6" points="310.136,365.373 335.279,365.373 331.111,347.061 307.394,347.061 	"/>
+	<polygon fill="#A7A5A6" points="351.491,365.373 376.634,365.373 370.118,347.061 346.404,347.061 	"/>
+	<polygon fill="#A7A5A6" points="392.846,365.373 417.989,365.373 409.126,347.061 385.41,347.061 	"/>
+	<polygon fill="#A7A5A6" points="118.346,338.533 141.403,338.533 147.704,323.067 125.853,323.065 	"/>
+	<polygon fill="#A7A5A6" points="155.356,338.533 178.412,338.533 182.778,323.067 160.927,323.067 	"/>
+	<polygon fill="#A7A5A6" points="192.365,338.533 215.421,338.535 217.851,323.068 196.001,323.067 	"/>
+	<polygon fill="#A7A5A6" points="230.285,338.533 253.341,338.535 253.786,323.068 231.937,323.068 	"/>
+	<polygon fill="#A7A5A6" points="268.202,338.535 291.255,338.535 289.719,323.068 267.872,323.068 	"/>
+	<polygon fill="#A7A5A6" points="306.118,338.535 329.172,338.535 325.652,323.07 303.804,323.07 	"/>
+	<polygon fill="#A7A5A6" points="344.035,338.535 367.085,338.535 361.584,323.071 339.739,323.07 	"/>
+	<polygon fill="#A7A5A6" points="381.95,338.537 404.999,338.535 397.514,323.071 375.67,323.07 	"/>
+	<polygon fill="#A7A5A6" points="129.372,315.815 150.658,315.815 156.049,302.585 135.794,302.583 	"/>
+	<polygon fill="#A7A5A6" points="163.539,315.816 184.824,315.816 188.559,302.585 168.305,302.583 	"/>
+	<polygon fill="#A7A5A6" points="197.705,315.816 218.989,315.816 221.068,302.585 200.815,302.585 	"/>
+	<polygon fill="#A7A5A6" points="232.712,315.817 253.996,315.817 254.378,302.586 234.125,302.586 	"/>
+	<polygon fill="#A7A5A6" points="267.717,315.819 288.998,315.819 287.684,302.59 267.432,302.588 	"/>
+	<polygon fill="#A7A5A6" points="302.72,315.817 324.002,315.819 320.99,302.59 300.74,302.588 	"/>
+	<polygon fill="#A7A5A6" points="337.724,315.819 359.006,315.819 354.296,302.592 334.049,302.59 	"/>
+	<polygon fill="#A7A5A6" points="367.354,302.59 372.727,315.821 394.006,315.823 387.603,302.592 	"/>
+</g>
+<g>
+	<rect x="165.072" y="189.925" fill="#EBA620" width="38.566" height="13.955"/>
+	<rect x="215.563" y="189.925" fill="#EBA620" width="17.253" height="13.955"/>
+	<rect x="165.072" y="215.043" fill="#EBA620" width="38.566" height="13.955"/>
+	<rect x="215.563" y="215.043" fill="#EBA620" width="17.253" height="13.955"/>
+	<rect x="165.072" y="240.162" fill="#EBA620" width="38.566" height="13.956"/>
+	<rect x="215.563" y="240.162" fill="#EBA620" width="17.253" height="13.956"/>
+</g>
+<rect x="274.935" y="224.178" fill="#3DBB93" width="102.759" height="49.73"/>
+<rect x="274.935" y="224.178" fill="#2D9F75" width="102.504" height="9.642"/>
+</svg>

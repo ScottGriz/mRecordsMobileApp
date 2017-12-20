@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/ios7-phonegap-fix.css" />
+        <link rel="stylesheet" type="text/css" href="css/legatus.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <script src="js/jquery-1.11.1.js"></script>
+<!--
+         <script type='text/javascript' src='http://code.jquery.com/jquery-1.6.4.js'></script>
+-->
+
+       
+        <title>Messages</title>
+    </head>
+    <body>
+        <div class="app-home">
+           
+            <div class="top-bar">
+                <div class="header_nav_left"><!-- <a href=""><i class="fa fa-play-circle fa-rotate-180"></i></a> --></div>
+                <div class="header_title"><img width="153"  src="img/title_messages.svg" onerror="this.onerror=null; this.src=''"></div>
+                <div class="header_nav_right"><!-- <i class="fa fa-play-circle "></i> --></div>
+              <!--   <div class="header_title">Messages</div> -->
+            </div>
+            <div class="content">
+                <div class="email_details">
+                    <div id="tripRadioGroup" class="radio">
+                        <!--<div class="email_row email_divider">
+                            <div class="email_alerts">
+                                <div class="email_status_unread"></div>
+                                <div class="email_attachment"><i class="fa fa-paperclip"></i></div>
+                            </div>
+                            <div class="email_left">
+                                <div>
+                                    <div class="email_from_label">Legatus Solutions and friends </div>
+                                    <div class="email_date_label">09.56</div>
+                                </div>
+                                <div class="email_subject">No need to re-sign, re-compile, or reinstall your app to test your code.
+                                </div>
+                                <div class="email_summary">
+                                    The desktop app is a command line tool that you need to install, using npm. 
+                                    An in-depth guide on how to do this is located on the PhoneGap install page.
+                                </div>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="email_row email_divider">
+                            <div class="email_alerts">
+                                <div class="email_status_read"></div>
+                                <div class="email_number">2</div>
+                                <div class="email_attachment"><i class="fa fa-paperclip"></i></div>
+                            </div>
+                            <div class="email_left">
+                                <div>
+                                    <div class="email_from_label">Legatus Solutions and friends </div>
+                                    <div class="email_date_label">09.56</div>
+                                </div>
+                                <div class="email_subject">No need to re-sign, re-compile, or reinstall your app to test your code.
+                                </div>
+                                <div class="email_summary">
+                                    The desktop app is a command line tool that you need to install, using npm. 
+                                    An in-depth guide on how to do this is located on the PhoneGap install page.
+                                </div>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>
+                        <div class="email_row email_divider">
+                            <div class="email_alerts">
+                                <div class="email_status_read"></div>
+                                <div class="email_number">2</div>
+                                <div class="email_attachment"><i class="fa fa-paperclip"></i></div>
+                            </div>
+                            <div class="email_left">
+                                <div>
+                                    <div class="email_from_label">Legatus Solutions and friends </div>
+                                    <div class="email_date_label">TUES</div>
+                                </div>
+                                <div class="email_subject">No need to re-sign, re-compile, or reinstall your app to test your code.
+                                </div>
+                                <div class="email_summary">
+                                    The desktop app is a command line tool that you need to install, using npm. 
+                                    An in-depth guide on how to do this is located on the PhoneGap install page.
+                                </div>
+                            </div>
+                            <div style="clear:both"></div>
+                        </div>-->
+       
+                    </div>
+                </div>
+                <div id="ajaxSpinner"> <i style="font-size: 2.5em" class="fa fa-spinner fa-spin"></i></div>
+            </div> 
+            <div class="bottom-bar">
+                <div class="nav-item">
+                    <div><a class="icon" href="home.html"><i class="icon fa fa-home fa-3x"></i></a></div>
+
+                   <!--  <div class="icon-desc"><a class="icon-desc" href="index.html">HOME</a></div> -->
+                </div>
+                <div class="nav-item-active">
+                    <div><a class="icon" href="messages.html"><i class="icon fa fa-envelope fa-3x"></i></a></div>
+                    <div class="noti" style="display: none">2</div>
+                    <!-- <div class="icon-desc"><a class="icon-desc" href="">MESSAGES</a></div> -->
+                </div>
+                <div class="nav-item">
+                    <div><a class="icon" href="drive.html"><i class="icon fa fa-tachometer fa-3x"></i></a></div>
+                    <!-- <div class="icon-desc"><a class="icon-desc" href="">DRIVING</a></div> -->
+                </div>
+                <div class="nav-item">
+                    
+                    <div><a class="icon" href="maps.html"><i class="icon fa fa-map-marker fa-3x"></i></a></div>
+                    <!-- <div class="icon-desc"><a class="icon-desc" href="">ROUTES</a></div> -->
+                </div>
+                <div class="nav-item">
+                    <div><a class="icon" href="settings.html"><i class="icon fa fa-cog fa-3x"></i></a></div>
+                    <!-- <div class="icon-desc"<a class="icon-desc" href="">SETTINGS</a></div> -->
+                </div>
+            </div>
+
+          
+           
+        </div>
+         
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/messages.js"></script>
+        <script type="text/javascript">
+            $('#ajaxSpinner').hide();
+            app.initialize();
+        </script>
+
+    </body>
+</html>

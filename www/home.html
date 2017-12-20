@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/ios7-phonegap-fix.css" />
+        
+        <link rel="stylesheet" type="text/css" href="css/legatus.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <script src="js/jquery-1.11.1.js"></script>
+        
+       
+        <title>mRecords Mobile</title>
+    </head>
+    <body>
+        <div class="app-home">
+            <div class="top-bar-sub">
+                <img height="44" width="150" src="img/mrecords_logo.svg" onerror="this.onerror=null; this.src='img/mrecords_logo.png'">
+            </div>
+            <div class="bottom-bar">
+                <div class="nav-item-active">
+                    <div><a class="icon" href="home.html"><i class="icon fa fa-home fa-3x"></i></a></div>
+
+                   <!--  <div class="icon-desc"><a class="icon-desc" href="index.html">HOME</a></div> -->
+                </div>
+                <div class="nav-item">
+                    <div><a class="icon" href="messages.html"><i class="icon fa fa-envelope fa-3x"></i></a></div>
+                    <div class="noti" style="display: none">2</div>
+                    <!-- <div class="icon-desc"><a class="icon-desc" href="">MESSAGES</a></div> -->
+                </div>
+                <div class="nav-item">
+                    <div><a class="icon" href="drive.html"><i class="icon fa fa-tachometer fa-3x"></i></a></div>
+                    <!-- <div class="icon-desc"><a class="icon-desc" href="">DRIVING</a></div> -->
+                </div>
+                <div class="nav-item">
+                    
+                    <div><a class="icon" href="maps.html"><i class="icon fa fa-map-marker fa-3x"></i></a></div>
+                    <!-- <div class="icon-desc"><a class="icon-desc" href="">ROUTES</a></div> -->
+                </div>
+                <div class="nav-item">
+                    <div><a class="icon" href="settings.html"><i class="icon fa fa-cog fa-3x"></i></a></div>
+                    <!-- <div class="icon-desc"<a class="icon-desc" href="">SETTINGS</a></div> -->
+                </div>
+            </div>
+            <div id="content" class="content">
+               <div class=""><img id="avatar" class="profile_pic" height="100" width="100" src="" alt="User Avatar"></div>
+                <!-- <div class=""><img id="avatar" class="profile_pic" height="100" width="100" src="data:image/png;base64,Y29tLmxlZ2F0dXMuUGVyc29uIDogNjI=" alt="User Avatar"></div> -->
+                <!--<div class=""><img id="avatar" class="profile_pic" height="100" width="100" src="http://localhost:8080/mRecordsMobileServices/assets/default_avatar.png" alt="User Avatar"></div> -->
+
+                <div class="home_details">
+                    <div id="userFullName" class="home_user_name"><i class="fa fa-user"></i> Julian Simpson</div>
+                    <div id="userEmail" class="home_user_email"><i class="fa fa-envelope"></i> thisisjuliansimpson@gmail.com</div>
+                    <div id="currentVehicle" class="home_user_blurb"><i class="fa fa-truck"></i> SRT-12345 | REG: VA</div>
+                </div>
+
+                <div class="home_buttons">
+                    <div class="home_change_vehicle">
+                        <a class="btn btn-large btn-primary btn-fill btn_home" onclick="window.location.href='new_trip.html'"><i class="fa fa-map-marker">&nbsp;</i>  Start a New Trip  </a></div>  
+                    </div>
+                    <div class="home_change_vehicle">
+                        <a id="bookedTripsBtn" onclick="goToTrips()" class="btn btn-large btn-success btn-fill btn_home">
+                            <span id="bookedTripsBtnSpinner" style="display: none"><i class="fa fa-spinner fa-spin "></i></span>
+                            <span id="bookedTripsBtnText" ><i style="font-size:1.2em" class="fa fa-list-ol"></i> View your past trips</span>
+                        </a>
+                        <!--<a class="btn btn-large btn-success btn-fill btn_home" onclick="window.location.href='trips.html'" >
+                            <i class="fa fa-list-ol">&nbsp;</i>  View your booked trips  </a>-->
+                    </div>       
+                    <div class="home_change_vehicle">
+                        <a class="btn btn-large btn-danger btn-fill btn_home" onclick="window.location.href='vehicle.html'">
+                            <i class="fa fa-truck">&nbsp;</i>  Driving a different Vehicle?</a>
+                    </div>
+                    <div class="home_test_geofire">
+                        <a class="btn btn-large btn-warning btn-fill btn_home" onclick="window.location.href='geofire.html'">Test GeoFire Trip</a>
+                    </div>
+                <div id="ajaxSpinner"> <i style="font-size: 2.5em" class="fa fa-spinner fa-spin"></i></div>
+                      
+            </div>
+        </div>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/common.js"></script>
+        <script type="text/javascript" src="js/home.js"></script>
+        <script>
+            $('#ajaxSpinner').hide();
+            app.initialize();
+        </script>
+
+    </body>
+</html>

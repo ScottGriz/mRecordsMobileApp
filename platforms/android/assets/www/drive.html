@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<!--
+    Copyright (c) 2012-2014 Adobe Systems Incorporated. All rights reserved.
+
+    Licensed to the Apache Software Foundation (ASF) under one
+    or more contributor license agreements.  See the NOTICE file
+    distributed with this work for additional information
+    regarding copyright ownership.  The ASF licenses this file
+    to you under the Apache License, Version 2.0 (the
+    "License"); you may not use this file except in compliance
+    with the License.  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing,
+    software distributed under the License is distributed on an
+    "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+     KIND, either express or implied.  See the License for the
+    specific language governing permissions and limitations
+    under the License.
+-->
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="msapplication-tap-highlight" content="no" />
+        <!-- WARNING: for iOS 7, remove the width=device-width and height=device-height attributes. See https://issues.apache.org/jira/browse/CB-4323 -->
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=medium-dpi" />
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/ios7-phonegap-fix.css" />
+        <link rel="stylesheet" type="text/css" href="css/legatus.css" />
+
+        <link rel="stylesheet" type="text/css" href="css/odometer-theme-train-station.css" />
+        <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/font-face.css" />
+
+
+        <script src="js/jquery-1.11.1.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDAp0s0LjHJW4rL7BXnq7RRtF1KIlWkQnk&sensor=true"></script>
+        <script src="js/odometer.js" type="text/javascript"></script>
+       
+        <title>Driving</title>
+    </head>
+    <body>
+        <div class="app-home">
+            <div class="top-bar">
+                <div class="header_nav_left"><!-- <a href=""><i class="fa fa-play-circle fa-rotate-180"></i></a> --></div>
+                
+                <div class="header_title"><img width="153"  src="img/title_driving.svg" onerror="this.onerror=null; this.src=''"></div>
+                
+                <div class="header_nav_right"><!-- <i class="fa fa-play-circle "></i> --></div>
+              <!--   <div class="header_title">Messages</div> -->
+            </div>
+            <div class="bottom-bar">
+                <div class="nav-item">
+                    <div><a class="icon" href="home.html"><i class="icon fa fa-home fa-3x"></i></a></div>
+
+                   <!--  <div class="icon-desc"><a class="icon-desc" href="index.html">HOME</a></div> -->
+                </div>
+                <div class="nav-item">
+                    <div><a class="icon" href="messages.html"><i class="icon fa fa-envelope fa-3x"></i></a></div>
+                    <div class="noti">2</div>
+                    <!-- <div class="icon-desc"><a class="icon-desc" href="">MESSAGES</a></div> -->
+                </div>
+                <div class="nav-item-active">
+                    <div><a class="icon" href="drive.html"><i class="icon fa fa-tachometer fa-3x"></i></a></div>
+                    <!-- <div class="icon-desc"><a class="icon-desc" href="">DRIVING</a></div> -->
+                </div>
+                <div class="nav-item">
+                    
+                    <div><a class="icon" href="maps.html"><i class="icon fa fa-map-marker fa-3x"></i></a></div>
+                    <!-- <div class="icon-desc"><a class="icon-desc" href="">ROUTES</a></div> -->
+                </div>
+                <div class="nav-item">
+                    <div><a class="icon" href="settings.html"><i class="icon fa fa-cog fa-3x"></i></a></div>
+                    <!-- <div class="icon-desc"<a class="icon-desc" href="">SETTINGS</a></div> -->
+                </div>
+            </div>
+            <div class="content">
+                <div class="home_details">
+                    <form>
+                    <!--<div class="trip_title_from">-->
+                        <!--<div class="trip_title_text"><span class="label label-success">TO</span> &nbsp;7580 E Gray Rd, Scottsdale, AZ 85260</div>-->
+                    <!--</div>-->
+                    <form>
+                        <div class="trip_title_from">
+                            <div  class="trip_origin_point"><span class="label label-important">FR</span><input style="min-width:260px" class="form_control drive_address" type="text" id="origin" disabled="disabled" name="origin" value="&nbsp;-- Searching --"> </div>
+                        </div>
+                    </form>
+                    <!-- <div class="odometer_reading"> -->
+                    <div class="odometer_row">
+                        <!-- <div class="map3-resultsOdometer"><div id="odometerWheel" class="odometer">10000000</div></div> -->
+                        <div class="odometer_title">ODOMETER<br/>READING</div>
+                        <div class="odometer_box_outer">
+                            <div class="odometer_box">
+                                <!--<div>TEST</div>-->
+                                <div id="digit0" class="odometer_digit">0</div>
+                                <div id="digit1" class="odometer_digit">1</div>
+                                <div id="digit2" class="odometer_digit">9</div>
+                                <div id="digit3" class="odometer_digit">3</div>
+                                <div id="digit4" class="odometer_digit">4</div>
+                                <div id="digit5" class="odometer_digit">1</div>
+                                <div id="digitFinal" class="odometer_digit_final">0</div>
+
+
+
+                            </div>
+                        </div>
+                        <div style="clear:both"></div>
+                        <!-- numbers need to be chunked and in reverse order to get around android style issues -->
+                    </div>
+                    <div style="clear:both"></div>
+                    <!-- <div class="trip_instructions">PLEASE CHOOSE YOUR CURRENT ACTIVITY:</div> -->
+                    <div class="trip_hours">
+                        <div class="trip_hours_available"><i class="fa fa-clock-o"></i> &nbsp;AVAIL: 11:00</div>
+                        <div class="trip_hours_used"><i class="fa fa-clock-o"></i> &nbsp;USED: 00:00</div>
+                        
+                    </div>
+                    <div class="trip_controls">
+                        <!-- <div class="trip_categories">
+                            <div class="trip_controls_driving">
+                                <div><i class="fa fa-truck"></i></div>
+                                <div>Driving</div>
+                            </div>
+                            <div class="trip_controls_sleeping">
+                                <div><i class="fa fa-moon-o"></i></div>
+                                <div>Sleep</div>
+                            </div>
+                            <div class="trip_controls_not_driving">
+                                <div><i class="fa fa-ban"></i></div>
+                                <div>Not Driving</div>
+                            </div>
+                            <div class="trip_controls_off_duty">
+                                <div><i class="fa fa-home"></i></div>
+                                <div>Off Duty</div>
+                            </div>
+                        </div> -->
+                        <!--<div  id="startStopButtons" class="trip_actions">-->
+                            <!--<div style="margin-right:2.5%" class="onoff"><button id="startButton" onclick="onoff(this)" style=""><span aria-hidden="true" class="icon-play"></span></button></div>-->
+
+
+                            <!--<div style="" class="onoff_stop"><button id="stopButton" onclick="onoff_stop(this)" style=""><span aria-hidden="true" class="icon-stop"></span></button></div>-->
+                        <!--</div>-->
+
+                        <div id="startStopButtons" class="trip_actions">
+
+                            <button id="startButton" class="drive_button_start" style=""><span aria-hidden="true" class="icon-play"></span></button>
+
+                            <button id="stopButton"  class="drive_button_stop" style=""><span aria-hidden="true" class="icon-stop"></span></button>
+
+                        </div>
+                        <!-- <div class="trip_actions">
+                            <div class="trip_start">
+                                <div class="start_icon">
+                                    <div style="color:#0aa699"><span aria-hidden="true" class="icon-play"></span></div>
+                                </div>
+                            </div>
+                            <div class="trip_stop">
+                                <div class="start_icon">
+                                    <div style="color:#f35958"><span aria-hidden="true" class="icon-stop"></span></div>
+                                </div>
+
+                            </div>
+                        </div> -->
+                        <div id="fuelReceiptButtons" class="trip_actions">
+                            <!--<div class="trip_start">-->
+                                <!--<div class="start_icon">-->
+                                    <!--<div style="color:#fdd01c"><a style="color:#fdd01c" href="add_fuel.html"><span aria-hidden="true" class="icon-drop"></span></a></div>-->
+                                <!--</div>-->
+                               <!---->
+                            <!--</div>-->
+                            <!--<div class="trip_stop">-->
+                                <!--<div class="start_icon">-->
+                                    <!--<div style="color:#0090d9"><a style="color:#0090D9" href="receipts.html"><span aria-hidden="true" class="icon-document-fill"></span></a></div>-->
+                                <!--</div>-->
+                                <!---->
+                            <!--</div>-->
+
+                            <button id="fuelButton" class="drive_button_fuel" onClick="location.href='add_fuel.html'"  style=""><span aria-hidden="true" class="icon-drop"></span></button>
+
+                            <button id="receiptButton"  class="drive_button_receipt" onClick="location.href='receipts.html'" style=""><span aria-hidden="true" class="icon-document-fill"></span></button>
+
+                        </div>
+                        <div id="ajaxSpinner"> <i style="font-size: 2.5em" class="fa fa-spinner fa-spin"></i></div>
+                        <!--<input type="file" accept="image/*" id="capture" capture="camera">-->
+                        <!-- <div class="trip_driving_time"></div>
+                        <div class="trip_fuel"></div>
+                        <div class="trip_permits"></div>     -->
+                        <div id="mapCanvas" class="map_area" style="display: none"></div>
+
+                    </div>
+                    </form>
+                    
+                    
+                </div>  
+               
+            </div>
+
+
+        </div>
+
+
+        <script type="text/javascript" src="cordova.js"></script>
+        <script src="js/common.js"></script>
+        <script src="js/drive.js"></script>
+
+        <script type="text/javascript">
+            $('#ajaxSpinner').hide();
+            app.initialize();
+        </script>
+
+    </body>
+</html>
